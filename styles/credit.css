@@ -4,6 +4,40 @@ body {
   font-family: 'Alata', sans-serif;
 }
 
+nav {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar-item {
+  color: white;
+  background-color: #FF6600;
+  padding: 20px 35px;
+  transition: background-color 0.7s, color 0.7s;
+  margin: 0px 70px;
+  opacity: 0.1;
+  animation: navelements 2s ease-in-out 0s forwards;
+  ;
+}
+
+.navbar-item:hover {
+  background-color: rgb(214, 89, 6);
+  color: black;
+}
+
+.first {
+  border-radius: 35% 0 0 35%;
+}
+
+.last {
+  border-radius: 0 35% 35% 0;
+}
+
 .calc-holder {
   display: flex;
   justify-content: center;
@@ -11,7 +45,7 @@ body {
 
 .calculator-cred {
   min-height: 310px;
-  max-width: 550px;
+  width: 612px;
   display: flex;
   background-color: #ebe7e7;
   padding: 14px;
@@ -135,8 +169,6 @@ body {
   height: auto;
 }
 
-
-
 .card {
   flex-direction: column;
   border-radius: 8px;
@@ -154,6 +186,15 @@ body {
   background-size: cover;
 }
 
+@keyframes navelements {
+  0% {}
+
+  100% {
+    margin: 0 1px;
+    opacity: 1;
+  }
+}
+
 @media (max-width: 838px) {
   .card-deck {
     flex-direction: column;
@@ -163,5 +204,13 @@ body {
 @media (max-width: 705px) {
   .calculator-cred {
     flex-direction: column;
+  }
+}
+
+
+@media (max-width: 492px) {
+  .navbar-item {
+    padding: 15px 20px;
+    ;
   }
 }
