@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Alata&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="./styles/credit.css">
+</head>
+
+<body>
+    <div class="calc-holder">
+        <div class="calculator-cred">
+            <div class="left-cred">
+                <h4>Kredyt gotówkowy na dowolny cel</h4>
+                <p>Ile pieniędzy potrzebujesz?</p>
+                <div class="slide-holder">
+                    <input id="input-cash" value="500" class="ranger" onchange=getCash() type="range" min="500"
+                        max="10000">
+                    <span id="cash-value" class="add-span">5000 zł</span>
+                </div>
+
+
+                <p>W jakim czasie chcesz spłacić kredyt?</p>
+                <div class="slide-holder">
+                    <input id="input-time" value="3" class="ranger" onchange=getTime() type="range" min="3" max="36">
+                    <span id="time-value" class="add-span">18 mc</span>
+                </div>
+            </div>
+            <div class="rigth-cred">
+                <h5>Miesięczna Rata: <span id="monthPaid">0 </span>zł</h5>
+                <h6>Oprocentowanie nominalne w skali roku: 9,9%</h6>
+                <h6>Prowizja: 12%</h6>
+                <h6>Całkowity koszt kredytu: <span id="totalPaid">0</span> zł</h6>
+
+
+            </div>
+        </div>
+    </div>
+    <div id="give-me-cards" class="container">
+
+
+
+
+    </div>
+    <script src="./jsFiles/templates.js"></script>
+    <script src="./jsFiles/main.js"></script>
+</body>
+
+</html>
