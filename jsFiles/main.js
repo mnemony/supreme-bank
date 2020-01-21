@@ -28,7 +28,7 @@ const totalCost = function () {
     cashValue = parseInt(document.querySelector('#input-cash').value);
     timeValue = parseInt(document.querySelector('#input-time').value);
 
-    let totalProv = cashValue * 0.15;
+    let totalProv = cashValue * 0.12;
     let part = cashValue * (1 + 0.099 / 12) ** timeValue *
         ((1 + 0.099 / 12 - 1) / ((1 + 0.099 / 12) ** timeValue - 1));
     let payback = (part * timeValue) - cashValue + totalProv;
