@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Fundusz</title>
+
+  <link rel="stylesheet" href="./styles/credit.css" />
+</head>
+
+<body>
+  <nav>
+    <a class="navbar-item first" href="./credit.html">Kredyt</a>
+    <a class="navbar-item" href="./credit.html">Kredyt</a>
+    <a class="navbar-item" href="./stock.html">Giełda</a>
+    <a class="navbar-item last" href="./invest.html">Fundusz</a>
+  </nav>
+
+  <div class="container-fund">
+    <h2>Przyszłość Twoich dzieci jest najważniejsza</h2>
+    <div class="intro-one">
+      <div class="left-hook">
+        <h4>Pomyśl o niej już teraz</h4>
+        <ul>
+          <li>Koszty prywanego szkolnictwa wyższego stale rosną</li>
+          <li>Życie 5 lat w innym mieście to wyzwanie</li>
+          <li>
+            Dodatkowe zajęcia? Nowy język obcy? Semestr na wymianie
+            zagranicznej? Mały biznes?
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="intro-two">
+      <div class="right-hook">
+        <h4>Nasza oferta jest specjalnie dla Ciebie</h4>
+        <ul>
+          <li>Już teraz możesz założyć fundusz dla swoich dzieci</li>
+          <li>Długoterminowa inwestycja - od 10 do 15 lat</li>
+          <li>
+            Wysokie oprocentowanie - do 3,5% w skali roku <br />
+            <span class="micro">(Przy rocznej wpłacie min 6. tysięcy złotych.)</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <h2 class="orange-flash">Sprawdź ile możesz zaoszczędzić</h2>
+    <div class="invest-calc">
+      <p>Rozpocznij już teraz oszczędzać na przyszłość swoich dzieci. Wpłata początkowa wynosi 5000 zł. Roczne wpłaty
+        wynosza od 1000 zł do 8000 zł. Czas trwania funduszu trwa od 10 do 15 lat. Wpłaty roczne poniżej 6000 zł są
+        oprocentowane 3.0% w skali roku - powyżej 3.5% w skali roku. </p>
+      <form action="" id="investform" onsubmit="return false">
+        <label for="investvalue">Ile chcesz wpłacać rocznie?</label>
+        <input class="fill-me" id="investvalue" type="number" min="1000" max="8000" value="1000">
+        <label for="investvalue">Ile lat ma trwać Twoja inwestycja?</label>
+        <input class="fill-me" id="investyears" type="number" min="10" max="15" value="10">
+        <button class="invest-button" type="submit">Oblicz wartość</button>
+      </form>
+    </div>
+    <div id="valuevisual">
+
+
+    </div>
+  </div>
+  <script src="./jsFiles/templates.js"></script>
+  <script src="./jsFiles/investor.js"></script>
+</body>
+
+</html>
