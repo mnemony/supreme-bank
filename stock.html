@@ -1,55 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Giełda</title>
+    <link rel="stylesheet" href="./styles/credit.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Giełda</title>
-  <link rel="stylesheet" href="./styles/credit.css" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
-</head>
-
-<body>
-  <nav>
-    <a class="navbar-item first" href="./index.html">Kredyt</a>
-    <a class="navbar-item" href="./index.html">Kredyt</a>
-    <a class="navbar-item" href="./stock.html">Giełda</a>
-    <a class="navbar-item last" href="./invest.html">Fundusz</a>
-  </nav>
-  <div class="container-fund">
-    <h2>Giełda - kierunek USA</h2>
-    <div class="intro-one">
-      <div class="left-hook plus">
-        <h4>Wall Street czeka!</h4>
-        <ul>
-          <li>
-            Już niedługo wprowadzimy możliwość zakupu akcji z Wall Street
-          </li>
-          <li>Apple? Nike? Microsoft? Na wyciągnieciu ręki</li>
-          <li>
-            Spełnij swoje inwestycyjne marzenia. Tymczasem zapraszmy do
-            zapoznania się z świeżymi danymi finansowymi prosto, zza oceanu
-          </li>
-        </ul>
+  <body>
+    <nav>
+      <a class="navbar-item first" href="./index.html">Kredyt</a>
+      <a class="navbar-item" href="./index.html">Kredyt</a>
+      <a class="navbar-item" href="./stock.html">Giełda</a>
+      <a class="navbar-item last" href="./invest.html">Fundusz</a>
+    </nav>
+    <div class="container-fund">
+      <h2>Giełda - kierunek USA</h2>
+      <div class="intro-one">
+        <div class="left-hook plus">
+          <h4>Wall Street czeka!</h4>
+          <ul>
+            <li>
+              Już niedługo wprowadzimy możliwość zakupu akcji z Wall Street
+            </li>
+            <li>Apple? Nike? Microsoft? Na wyciągnieciu ręki</li>
+            <li>
+              Spełnij swoje inwestycyjne marzenia. Tymczasem zapraszmy do
+              zapoznania się z świeżymi danymi finansowymi prosto, zza oceanu
+            </li>
+          </ul>
+        </div>
       </div>
+
+      <h2 class="orange-flash">Najciekawsze spółki ostatniej sesji</h2>
     </div>
 
-    <h2 class="orange-flash">Najciekawsze spółki ostatniej sesji</h2>
-  </div>
+    <div class="stocktable">
+      <table id="freshdata">
+        <tr>
+          <th>Firma</th>
+          <th>Indeks</th>
+          <th>Wartość (1 szt. w USD)</th>
+          <th>Wzrost w procentach</th>
+        </tr>
+      </table>
+    </div>
+    <div class="footer">
+      <h6>© 2020 Copyright: Maksym Przewoźny</h6>
+    </div>
 
-  <div class="stocktable">
-    <table id="freshdata">
-      <tr>
-        <th>Firma</th>
-        <th>Indeks</th>
-        <th>Wartość (1 szt. w USD)</th>
-        <th>Wzrost w procentach</th>
-      </tr>
-    </table>
-  </div>
-
-  <script src="./jsFiles/stockAPI.js"></script>
-</body>
-
+    <script src="./jsFiles/stockAPI.js"></script>
+  </body>
 </html>
