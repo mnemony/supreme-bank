@@ -30,10 +30,7 @@ const calculateIt = function (e) {
 
     totalValue = Math.round(totalValue)
 
-    resultOfInvest.innerHTML = `
-    <h2 class="orange-flash"> Po ${lengthO} latach uda Ci się zaoszczędzić ${totalValue} zł</h2>
-    <h3>To wystarczy na:</h3>
-    `;
+    resultOfInvest.innerHTML = returnInfo(lengthO, totalValue);
 
     //inject correct info about investment possibilities
     if (totalValue < 25000) {

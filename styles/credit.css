@@ -365,9 +365,19 @@ th {
   color: white;
 }
 
+
+
+.orange-flash a {
+  color: #cfc5c5;
+}
+
+.orange-flash a:hover {
+  color: #554b4b;
+}
+
+
 @keyframes navelements {
-  0% {
-  }
+  0% {}
 
   100% {
     margin: 0 1px;
@@ -382,15 +392,18 @@ th {
 }
 
 @media (max-width: 914px) {
+
   .right-hook,
   .left-hook {
     padding: 15px;
     margin: 20px;
   }
+
   .right-hook li,
   .left-hook li {
     font-size: 14px;
   }
+
   .container-fund {
     padding: 10px;
     margin-right: 10vw;
@@ -415,22 +428,27 @@ th {
   .navbar-item {
     padding: 15px 20px;
   }
+
   ul {
     padding-inline-start: 8px;
   }
+
   .container-fund {
     padding: 8px;
     margin-right: 6vw;
     margin-left: 6vw;
   }
+
   .plus {
     height: 220px;
   }
+
   td,
   th {
     padding: 5px;
     font-size: 11px;
   }
+
   table {
     border-collapse: collapse;
     width: 95%;

@@ -95,3 +95,11 @@ const investPrime = `
       <div class="possible">Budżet pozwalający na szeroki wybór działalności gospodarczej
       </div>
 `
+
+
+const returnInfo = function (a, b) {
+    return `
+    <h2 class="orange-flash"> Po ${a} latach uda Ci się zaoszczędzić ${b} zł</h2>
+    <h3>To wystarczy na:</h3>
+    `
+}
