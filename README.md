@@ -8,9 +8,9 @@ A simple "bank" application.
 
 <h4>Technologies inside</h4>
 
-*HTML
-*CSS + flexbox
-*JavaScript + axios
+* HTML
+* CSS + flexbox
+* JavaScript + axios
 
 <h4>Aplication usability</h4>
 
