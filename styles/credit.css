@@ -55,10 +55,15 @@ li::before {
   border-radius: 0 35% 35% 0;
 }
 
+.up-margin {
+  margin-top: 19px;
+}
+
 /* credit calculator  */
 .calc-holder {
   display: flex;
   justify-content: center;
+  margin-top: 18px;
 }
 
 .calculator-cred {
@@ -326,7 +331,7 @@ li::before {
 .stocktable {
   display: flex;
   justify-content: center;
-  margin: 15px;
+  margin: 0px 15px 15px 15px;
 }
 
 table {
@@ -419,6 +424,7 @@ th {
   .calculator-cred {
     flex-direction: column;
     text-align: center;
+    max-width: 400px;
   }
 }
 
@@ -450,5 +456,11 @@ th {
   table {
     border-collapse: collapse;
     width: 95%;
+  }
+  .left-hook h4 {
+    margin: 0;
+  }
+  .right-hook h4 {
+    margin: 0;
   }
 }
