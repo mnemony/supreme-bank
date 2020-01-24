@@ -71,6 +71,7 @@ li::before {
   align-items: center;
   align-self: center;
   border-radius: 3px;
+  justify-content: space-evenly;
 }
 
 .slide-holder {
@@ -365,8 +366,6 @@ th {
   color: white;
 }
 
-
-
 .orange-flash a {
   color: #cfc5c5;
 }
@@ -375,9 +374,9 @@ th {
   color: #554b4b;
 }
 
-
 @keyframes navelements {
-  0% {}
+  0% {
+  }
 
   100% {
     margin: 0 1px;
@@ -392,7 +391,6 @@ th {
 }
 
 @media (max-width: 914px) {
-
   .right-hook,
   .left-hook {
     padding: 15px;
