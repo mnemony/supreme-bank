@@ -381,8 +381,7 @@ th {
 }
 
 @keyframes navelements {
-  0% {
-  }
+  0% {}
 
   100% {
     margin: 0 1px;
@@ -397,6 +396,7 @@ th {
 }
 
 @media (max-width: 914px) {
+
   .right-hook,
   .left-hook {
     padding: 15px;
@@ -458,9 +458,16 @@ th {
     border-collapse: collapse;
     width: 95%;
   }
+
+  .plus {
+    max-width: 224px;
+  }
+
   .left-hook h4 {
     margin: 0;
+
   }
+
   .right-hook h4 {
     margin: 0;
   }
