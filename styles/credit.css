@@ -330,6 +330,7 @@ li::before {
 
 .stocktable {
   display: flex;
+  min-height: 40vh;
   justify-content: center;
   margin: 0px 15px 15px 15px;
 }

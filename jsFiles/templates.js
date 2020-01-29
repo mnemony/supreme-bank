@@ -64,7 +64,7 @@ const investBasic = `<div class="possible">Studia pierwszego stopnia na prywatne
 </div>`
 
 const investBasicPlus = `<div class="possible">Studia I i II stopnia na prywatnej uczelni w Polsce</div>
-<div class="possible">Kilkuletnie kursy języków obcych + wakacyjne praktyki językowe za zgranicą</div>
+<div class="possible">Kilkuletnie kursy języków obcych + wakacyjne praktyki językowe zagranicą</div>
 <div class="possible">Start w małym biznesie: mobilna kawiarnia, usługi specjalistyczne, mały sklep internetowy?
 </div>`
 
